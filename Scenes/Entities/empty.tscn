@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://yt350hnanhtr"]
+
+[ext_resource type="Texture2D" uid="uid://wyxbpp8n46hj" path="res://Sprites/Tiles/1.png" id="1_x1msj"]
+[ext_resource type="Texture2D" uid="uid://di44u2e4rbqre" path="res://Sprites/Tiles/2.png" id="2_gh84q"]
+[ext_resource type="Texture2D" uid="uid://dkvcdjn7hklls" path="res://Sprites/Tiles/3.png" id="3_dvn48"]
+[ext_resource type="Texture2D" uid="uid://7cgqv5d1a07l" path="res://Sprites/Tiles/4.png" id="4_rfls1"]
+[ext_resource type="Texture2D" uid="uid://cu8chlg54j011" path="res://Sprites/Tiles/5.png" id="5_yv664"]
+[ext_resource type="Texture2D" uid="uid://b6tln2xbq2nu1" path="res://Sprites/Tiles/6.png" id="6_ofsra"]
+[ext_resource type="Texture2D" uid="uid://bbcwm3id2isue" path="res://Sprites/Tiles/7.png" id="7_ex2l4"]
+[ext_resource type="Texture2D" uid="uid://mflqby5m26yv" path="res://Sprites/Tiles/8.png" id="8_kgwfy"]
+[ext_resource type="Script" uid="uid://dpkx3d3nt0ltq" path="res://empty.gd" id="9_xg12f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hdjdr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_x1msj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gh84q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dvn48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rfls1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yv664")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ofsra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ex2l4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kgwfy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Empty" type="AnimatedSprite2D" unique_id=1004193835]
+sprite_frames = SubResource("SpriteFrames_hdjdr")
+script = ExtResource("9_xg12f")
+metadata/_custom_type_script = "uid://bbwdriv7dk7xr"

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://btygshevtkqys"]
+
+[ext_resource type="Script" uid="uid://6jarlhr1o7x3" path="res://Scenes/camera.gd" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://d1a1d3f6pvvei" path="res://Scenes/board.tscn" id="1_jjgbg"]
+
+[node name="Main" type="Node"]
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+limit_enabled = false
+script = ExtResource("1_bo1nx")
+
+[node name="Board" parent="." instance=ExtResource("1_jjgbg")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UIMain" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

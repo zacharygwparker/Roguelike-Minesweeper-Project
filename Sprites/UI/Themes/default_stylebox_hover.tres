@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cpb26q510drc"]
+
+[ext_resource type="Texture2D" uid="uid://dhctha4afssd1" path="res://Sprites/UI/Themes/default_stylebox_hover.png" id="1_5augs"]
+
+[resource]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 0.0
+texture = ExtResource("1_5augs")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0

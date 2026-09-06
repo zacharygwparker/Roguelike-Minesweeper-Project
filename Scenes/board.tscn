@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dj517yh76tb7k"]
+
+[ext_resource type="Script" uid="uid://dcqg2t5jehh56" path="res://Scripts/Classes/board.gd" id="1_tnbny"]
+[ext_resource type="Script" uid="uid://bxjm61aekoqnr" path="res://Scenes/background.gd" id="6_bh37u"]
+[ext_resource type="Texture2D" uid="uid://cufok7x88lx4c" path="res://Sprites/Background.png" id="6_twe5h"]
+
+[node name="Board" type="Node2D" unique_id=694265513]
+script = ExtResource("1_tnbny")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=328560180]
+visible = false
+texture_repeat = 2
+texture = ExtResource("6_twe5h")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 144, 93)
+script = ExtResource("6_bh37u")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://q0bshnsno1ct"]
+
+[ext_resource type="PackedScene" uid="uid://dj517yh76tb7k" path="res://Scenes/board.tscn" id="1_uxgwr"]
+[ext_resource type="Script" uid="uid://cthqoblte1s02" path="res://Scenes/camera.gd" id="2_78sfw"]
+
+[node name="Session" type="Node" unique_id=418065256]
+
+[node name="Board" parent="." unique_id=694265513 instance=ExtResource("1_uxgwr")]
+
+[node name="Camera" type="Camera2D" parent="." unique_id=125485727]
+position = Vector2(0, 1)
+zoom = Vector2(2, 2)
+limit_enabled = false
+script = ExtResource("2_78sfw")

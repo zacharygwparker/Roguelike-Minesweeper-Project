@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b786fb33dct77"]
+
+[ext_resource type="Script" uid="uid://dpyul8pqfh7ll" path="res://Scripts/Classes/tile.gd" id="1_khers"]
+[ext_resource type="Texture2D" uid="uid://1w5pp4jdrb1c" path="res://Sprites/Tiles/Ground.png" id="2_g7l7l"]
+[ext_resource type="Texture2D" uid="uid://babiwhdgla5yn" path="res://Sprites/Tiles/Grass.png" id="3_y55j6"]
+[ext_resource type="Texture2D" uid="uid://c4atk0gyfsip0" path="res://Sprites/Tiles/Flagged.png" id="4_1f6se"]
+[ext_resource type="Texture2D" uid="uid://dgprxmxripowj" path="res://Sprites/Tiles/Click.png" id="5_y55j6"]
+[ext_resource type="Texture2D" uid="uid://ckevke6u4sv0w" path="res://Sprites/Tiles/Hover.png" id="6_1f6se"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_myvb2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y55j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1f6se")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Tile" type="Node2D" unique_id=1416649672]
+script = ExtResource("1_khers")
+
+[node name="Ground" type="Sprite2D" parent="." unique_id=323757932]
+z_index = -1
+texture = ExtResource("2_g7l7l")
+
+[node name="Grass" type="AnimatedSprite2D" parent="." unique_id=375863147]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_myvb2")
+frame = 1
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=898255156]
+z_index = 3
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+texture_pressed = ExtResource("5_y55j6")
+texture_hover = ExtResource("6_1f6se")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

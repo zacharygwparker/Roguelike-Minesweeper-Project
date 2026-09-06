@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://df3slthmvqtoj"]
+
+[ext_resource type="Script" uid="uid://be8fgjx4iu8cg" path="res://Scripts/Autoloads/global_resources.gd" id="1_85606"]
+[ext_resource type="PackedScene" uid="uid://yt350hnanhtr" path="res://Scenes/Entities/empty.tscn" id="2_fpktj"]
+[ext_resource type="PackedScene" uid="uid://b786fb33dct77" path="res://Scenes/tile.tscn" id="2_hpsfw"]
+[ext_resource type="PackedScene" uid="uid://cn3mxcbemb3xl" path="res://Scenes/Entities/mine.tscn" id="4_clef0"]
+
+[node name="GlobalResources" type="Node" unique_id=348751543]
+script = ExtResource("1_85606")
+Tile_Scene = ExtResource("2_hpsfw")
+Empty_Scene = ExtResource("2_fpktj")
+Mine_Scene = ExtResource("4_clef0")

@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://dqbxpvt2tmkdf"]
+
+[ext_resource type="StyleBox" uid="uid://cpb26q510drc" path="res://Sprites/UI/Themes/default_stylebox_hover.tres" id="1_hnwee"]
+[ext_resource type="FontFile" uid="uid://dmgeidjq4uucq" path="res://font.png" id="1_yi6nh"]
+[ext_resource type="StyleBox" uid="uid://c6pu053qc5uq2" path="res://Sprites/UI/Themes/default_stylebox.tres" id="2_6m6w2"]
+[ext_resource type="StyleBox" uid="uid://d0l8n578ds8w6" path="res://Sprites/UI/Themes/default_stylebox_pressed.tres" id="3_wlmap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lx5gc"]
+
+[resource]
+default_font = ExtResource("1_yi6nh")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_lx5gc")
+Button/styles/hover = ExtResource("1_hnwee")
+Button/styles/normal = ExtResource("2_6m6w2")
+Button/styles/pressed = ExtResource("3_wlmap")

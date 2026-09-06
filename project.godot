@@ -1,0 +1,54 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Roguelike Minesweeper"
+run/main_scene="uid://q0bshnsno1ct"
+config/features=PackedStringArray("4.6")
+config/icon="uid://ckgjb2s2kxmdq"
+
+[autoload]
+
+TurnManager="*uid://5bnaum43a4h2"
+GlobalResources="*uid://df3slthmvqtoj"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+mouse_cursor/custom_image="uid://bkb0p8mrru2fc"
+
+[editor]
+
+movie_writer/mix_rate=8000
+movie_writer/ogv/audio_quality=0.0
+movie_writer/ogv/encoding_speed=1
+movie_writer/movie_file="C:/Users/FireC/OneDrive/Projects/Godot/Projects/roguelike-minesweeper/screen_recording.avi"
+movie_writer/fps=24
+
+[global_group]
+
+mines="Counted by bordering clear tiles"
+
+[gui]
+
+theme/custom="uid://dqbxpvt2tmkdf"
+theme/custom_font="uid://dmgeidjq4uucq"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=3
