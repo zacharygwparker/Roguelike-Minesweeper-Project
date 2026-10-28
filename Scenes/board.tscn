@@ -8,7 +8,7 @@
 script = ExtResource("1_tnbny")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=328560180]
-visible = false
+z_index = -2
 texture_repeat = 2
 texture = ExtResource("6_twe5h")
 centered = false
